@@ -2,16 +2,14 @@ sortApp = sortApp || {};
 
 sortApp.SortingController = (function(){
 
-	// var state = {
-	// 	register: []
-	// }
-
 	function initialize(initialState, registerLength){
 		return sortApp.RegisterController.initializeRegister(initialState, registerLength);
 	}
 
-	function doSort(sortType, completion){
-		
+	function doSort(register, sortType, degreeOfCompletion){
+		if(sortType === 'insertionSort'){
+			return sortApp.insertionSortLogic.sort(register, degreeOfCompletion);
+		}
 	}
 
 	return {

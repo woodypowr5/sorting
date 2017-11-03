@@ -6,7 +6,7 @@ sortApp.InitializeController = (function(){
 		sortApp.AppConfig = mergeConfigs(sortApp.AppConfig, options);
 		sortApp.SortingController.initialize(sortApp.AppConfig.initialRegisterState, sortApp.AppConfig.registerLength);
 	}
-
+	
 	function mergeConfigs(defaultConfig, options){
 		return Object.assign(defaultConfig, options);
 	}

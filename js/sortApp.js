@@ -4,8 +4,13 @@ var sortApp = (function(){
 		return sortApp.InitializeController.initialize(options);
 	}
 	
+	function play(register){
+		return playController.play();
+	}
+
 	return {
-		initialize: initialize
+		initialize: initialize,
+		play: play
 	}
 
 })();

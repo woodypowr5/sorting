@@ -11,15 +11,21 @@
 	<script src="js/controllers/sortingController.js"></script>
 	<script src="js/controllers/initializeController.js"></script>
 	<script src="js/controllers/registerController.js"></script>
+	<script src="js/controllers/flowController.js"></script>
 	<script src="js/data/appConfig.js"></script>
 	<script src="js/data/constants.js"></script>
 	<script src="js/BLL/mathLogic.js"></script>
+	<script src="js/BLL/RegisterLogic.js"></script>
 	<script src="js/BLL/insertionSortLogic.js"></script>
 
 	<script>
-		sortApp.initialize({
+
+		var register = sortApp.initialize({
 			
 		});
+
+		sortApp.play(register)
+		
 	</script>
 </html>
 
