@@ -1,0 +1,5 @@
+sortApp = sortApp || {};
+
+sortApp.Constants = {
+
+}
