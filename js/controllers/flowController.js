@@ -6,14 +6,17 @@ sortApp.flowController = (function(){
 		if(isSorted(register) === false){
 			return play(getNextStep(register));
 		}
-
+		return;
 	}
 
 	function getNextStep(register){
-		return sortApp.SortController.doSort(register, sortApp.AppConfig.sortType, 'step')
+		var newRegister = sortApp.SortingController.doSort(register, sortApp.AppConfig.sortType, 'step');
+		sortApp.DrawUI.drawRow(register);
+		return newRegister;
 	}
 
 	function isSorted(register){
+		console.log(register)
 		return sortApp.RegisterLogic.isSorted(register)
 	}
 

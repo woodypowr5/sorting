@@ -5,7 +5,7 @@ var sortApp = (function(){
 	}
 	
 	function play(register){
-		return playController.play();
+		return sortApp.flowController.play(register);
 	}
 
 	return {

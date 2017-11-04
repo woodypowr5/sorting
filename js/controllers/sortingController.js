@@ -8,7 +8,7 @@ sortApp.SortingController = (function(){
 
 	function doSort(register, sortType, degreeOfCompletion){
 		if(sortType === 'insertionSort'){
-			return sortApp.insertionSortLogic.sort(register, degreeOfCompletion);
+			return sortApp.InsertionSortLogic.sort(register);
 		}
 	}
 
