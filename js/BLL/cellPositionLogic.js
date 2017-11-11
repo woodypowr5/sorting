@@ -2,12 +2,17 @@ sortApp = sortApp || {};
 
 sortApp.CellPositionLogic = (function(){
 
-	function getCellWidth(registerLength, canvasWidth){
-		return Math.floor(canvasWidth/registerLength);
+	function getCellWidth(){
+		return Math.floor(sortApp.AppConfig.canvasWidth/sortApp.AppConfig.registerLength);
+	}
+	function getCellHeight(){
+		// console.log(sortApp.AppConfig)
+		return Math.floor((getCellWidth())*sortApp.AppConfig.cellHeightMultiplier);
 	}
 
 	return {
-		getCellWidth: getCellWidth
+		getCellWidth: getCellWidth,
+		getCellHeight: getCellHeight
 	}
 
 })();

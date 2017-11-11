@@ -16,8 +16,8 @@ sortApp.BubbleSortLogic = (function(){
 		if(register[state.index-1] > register[state.index]){
 			register = sortApp.RegisterLogic.swap(register, state.index, state.index-1);
 		}
-		console.log(state.index)
 		state.index++;
+		
 		return register
 	}
 

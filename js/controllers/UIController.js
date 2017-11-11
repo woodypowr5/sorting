@@ -25,7 +25,7 @@ sortApp.UIController = (function(){
 	}
 
 	function getRowPosition(){
-		return sortApp.CellPositionLogic.getCellWidth(sortApp.AppConfig.registerLength, sortApp.AppConfig.canvasWidth) * state.currentRow;
+		return sortApp.CellPositionLogic.getCellHeight() * state.currentRow;
 	}
 
 	return {
