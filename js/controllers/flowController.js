@@ -3,8 +3,10 @@ sortApp = sortApp || {};
 sortApp.flowController = (function(){
 
 	function play(register){
+		var newRegister;
 		if(sortApp.RegisterLogic.isSorted(register) === false){
-			return play(getNextStep(register));
+			newRegister = getNextStep(register);
+			setTimeout(function() {play(register)}, 1/sortApp.Constants.speed[sortApp.AppConfig.speed]*1000);
 		}
 		return;
 	}
