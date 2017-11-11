@@ -1,10 +1,10 @@
 sortApp = sortApp || {};
 
 sortApp.AppConfig = {
-	canvasWidth: 500,
-	canvasHeight: 500,
-	sortType: "insertionSort",
-	registerLength: 8,
+	canvasWidth: 800,
+	canvasHeight: 1800,
+	sortType: "bubbleSort",
+	registerLength: 16,
 	initialRegisterState: 'random',
 	colors: 'grayscale'
 }

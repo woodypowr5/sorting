@@ -15,7 +15,6 @@ sortApp.RegisterUI = (function(){
 	function createCell(cellValue, cellWidth, index){
 		var square = new createjs.Shape();
 		var color = sortApp.CellColorLogic.getCellColor(cellValue);
-		console.log(color)
 		square.graphics.beginFill(color).drawRect(index*cellWidth, 0, cellWidth, cellWidth);
 		return square;
 	}

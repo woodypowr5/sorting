@@ -3,7 +3,7 @@ sortApp = sortApp || {};
 sortApp.CellPositionLogic = (function(){
 
 	function getCellWidth(registerLength, canvasWidth){
-		return canvasWidth/registerLength;
+		return Math.floor(canvasWidth/registerLength);
 	}
 
 	return {

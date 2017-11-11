@@ -9,6 +9,8 @@ sortApp.SortingController = (function(){
 	function doSort(register, sortType){
 		if(sortType === 'insertionSort'){
 			return sortApp.InsertionSortLogic.sort(register);
+		} else if(sortType === 'bubbleSort'){
+			return sortApp.BubbleSortLogic.sort(register);
 		}
 	}
 
