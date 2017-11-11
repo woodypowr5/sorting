@@ -24,4 +24,5 @@ sortApp.InsertionSortLogic = (function(){
 		sort: sort
 	}
 
+
 })();

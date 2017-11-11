@@ -4,6 +4,7 @@ sortApp.InitializeController = (function(){
 
 	function initialize(options){
 		sortApp.AppConfig = mergeConfigs(sortApp.AppConfig, options);
+		sortApp.UIController.initializeUI();
 		return sortApp.SortingController.initialize(sortApp.AppConfig.initialRegisterState, sortApp.AppConfig.registerLength);
 	}
 

@@ -2,7 +2,7 @@ describe('InsertionSortLogic', function(){
 
 	var sut = sortApp.InsertionSortLogic;
 
-	describe('swap', function(){
+	describe('sort', function(){
 
 		it('should return the array if it is sorted', function(){
 

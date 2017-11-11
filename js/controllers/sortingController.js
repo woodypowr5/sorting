@@ -6,7 +6,7 @@ sortApp.SortingController = (function(){
 		return sortApp.RegisterController.initializeRegister(initialState, registerLength);
 	}
 
-	function doSort(register, sortType, degreeOfCompletion){
+	function doSort(register, sortType){
 		if(sortType === 'insertionSort'){
 			return sortApp.InsertionSortLogic.sort(register);
 		}

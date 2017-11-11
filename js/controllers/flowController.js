@@ -3,7 +3,7 @@ sortApp = sortApp || {};
 sortApp.flowController = (function(){
 
 	function play(register){
-		if(isSorted(register) === false){
+		if(sortApp.RegisterLogic.isSorted(register) === false){
 			return play(getNextStep(register));
 		}
 		return;
@@ -11,13 +11,8 @@ sortApp.flowController = (function(){
 
 	function getNextStep(register){
 		var newRegister = sortApp.SortingController.doSort(register, sortApp.AppConfig.sortType, 'step');
-		sortApp.DrawUI.drawRow(register);
+		sortApp.UIController.drawNextStep(register);
 		return newRegister;
-	}
-
-	function isSorted(register){
-		console.log(register)
-		return sortApp.RegisterLogic.isSorted(register)
 	}
 
 	return {
